@@ -64,7 +64,8 @@ article figure {
 
 article img {
     width: 100%;
-    height: 200px;
+    height: auto;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 15px;
     border: 5px solid #8B4513;
@@ -111,4 +112,146 @@ article::before {
 
 article {
     position: relative;
+}
+
+/* Estilos para páginas detalhadas */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main section h2 {
+    color: #8B4513;
+    font-size: 30px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+main section figure {
+    margin: 0 auto 20px;
+    max-width: 400px;
+}
+
+main section figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #8B4513;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+main section li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 40px;
+    }
+
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    article {
+        padding: 16px;
+    }
+
+    main section {
+        padding: 16px;
+    }
+
+    main section h2 {
+        font-size: 25px;
+    }
+
+    main section figure {
+        max-width: 300px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    article {
+        padding: 12px;
+    }
+
+    main section {
+        padding: 12px;
+    }
+
+    main section h2 {
+        font-size: 20px;
+    }
+
+    main section figure {
+        max-width: 250px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
